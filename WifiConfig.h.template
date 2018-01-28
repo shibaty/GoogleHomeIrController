@@ -1,0 +1,10 @@
+#ifndef _WIFICONFIG_H_
+#define _WIFICONFIG_H_
+
+struct WifiConfig { 
+  static constexpr char *ssid = "";
+  static constexpr char *password = "";
+  static constexpr char *ipAddr = "";
+};
+
+#endif // _WIFICONFIG_H_
