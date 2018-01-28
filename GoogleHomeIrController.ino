@@ -4,14 +4,18 @@
 #include <IRremoteESP8266.h>
 #include <IRsend.h>
 #include <ArduinoJson.h>
+#include <Ticker.h>
 #include "ElectronicsConst.h"
 #include "WifiConfig.h"
 
 constexpr int port = 80;
 constexpr uint16_t gpiopin_ir = 14;
 constexpr uint16_t khz = 38;
+constexpr float interval = 5 * 60;
+
 ESP8266WebServer server(port);
 IRsend irsend(gpiopin_ir);
+Ticker ticker;
 
 bool irsendForTv(String action) {
 
@@ -164,6 +168,10 @@ void handleNotFound() {
   server.send(404, "text/plain", "Not Found.");
 }
 
+void tickerCallback() {
+  // suppress entering sleep mode
+}
+
 void setup() {
   // Serial initialize
   Serial.begin(115200);
@@ -199,6 +207,9 @@ void setup() {
   irsend.begin();
   server.begin();
   Serial.println("WebServer Started.");
+
+  // set Ticker
+  ticker.attach(interval, tickerCallback);
 }
 
 void loop() {
