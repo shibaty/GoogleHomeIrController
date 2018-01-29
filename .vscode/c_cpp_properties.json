@@ -51,11 +51,11 @@
                 "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\avr\\include",
                 "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\4.9.2\\include",
                 "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino",
-                "C:\\Users\\Yasutaka\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.0\\libraries",
+                "C:\\Users\\Yasutaka\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.0-rc2\\libraries",
                 "G:\\develop\\arduino\\libraries\\IRremoteESP8266\\src",
                 "G:\\develop\\arduino\\libraries\\ArduinoJson\\src",
                 "${workspaceRoot}",
-                "C:\\Users\\Yasutaka\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.0\\cores\\esp8266"
+                "C:\\Users\\Yasutaka\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.0-rc2\\cores\\esp8266"
             ],
             "defines": [
                 "_DEBUG",
@@ -70,11 +70,11 @@
                     "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\avr\\include",
                     "C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\lib\\gcc\\avr\\4.9.2\\include",
                     "C:\\Program Files (x86)\\Arduino\\hardware\\arduino\\avr\\cores\\arduino",
-                    "C:\\Users\\Yasutaka\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.0\\libraries",
+                    "C:\\Users\\Yasutaka\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.0-rc2\\libraries",
                     "G:\\develop\\arduino\\libraries\\IRremoteESP8266\\src",
                     "G:\\develop\\arduino\\libraries\\ArduinoJson\\src",
                     "${workspaceRoot}",
-                    "C:\\Users\\Yasutaka\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.0\\cores\\esp8266"
+                    "C:\\Users\\Yasutaka\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.0-rc2\\cores\\esp8266"
                 ],
                 "limitSymbolsToIncludedHeaders": false,
                 "databaseFilename": ""
