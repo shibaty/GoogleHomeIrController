@@ -15,7 +15,7 @@ application/json
 
 | key     | value                |
 | --------|:---------------------|
-| target  | tv/light/ac          |
+| target  | tv/light/ac/speaker/roomba          |
 | action  | poweron/poweroff     |
 |         | (tv_only)volumeup/volumedown/channelup/channeldown |
 |         | (ac_only)heateron,acon |

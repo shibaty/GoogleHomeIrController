@@ -95,6 +95,41 @@ bool irsendForAc(String action) {
   return true;
 }
 
+bool irsendForSpeaker(String action) {
+
+  uint64_t actionData;
+
+  if (action == "poweron") {
+    actionData = ElectronicsConst_Data::Speaker_Power;
+  } else
+  if (action == "poweroff") {
+    actionData = ElectronicsConst_Data::Speaker_Power;
+  } else {
+    Serial.println("unknown action");
+    return false;
+  }
+
+  irsend.sendNEC(actionData);
+  return true;
+}
+
+bool irsendForRoomba(String action) {
+
+  uint16_t* raw;
+  uint16_t size;
+
+  if (action == "poweron") {
+    raw = const_cast<uint16_t*>(ElectronicsConst_RAW::RoombaStart);
+    size = sizeof(ElectronicsConst_RAW::RoombaStart) / sizeof(uint16_t);
+  } else {
+    Serial.println("unknown action");
+    return false;
+  }
+
+  irsend.sendRaw(raw, size, khz);
+  return true;
+}
+
 bool irsendForSampleAc(String action) {
 
   uint16_t* raw;
@@ -144,6 +179,12 @@ void handleCtl() {
   } else
   if(target == "ac") {
     result = irsendForAc(action);
+  } else
+  if(target == "speaker") {
+    result = irsendForSpeaker(action);
+  } else
+  if(target == "roomba") {
+    result = irsendForRoomba(action);
   } else
   if(target == "sampleac") {
     result = irsendForSampleAc(action);
