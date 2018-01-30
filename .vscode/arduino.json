@@ -1,6 +1,6 @@
 {
     "board": "esp8266:esp8266:generic",
-    "configuration": "CpuFrequency=80,ResetMethod=ck,CrystalFreq=26,FlashFreq=40,FlashMode=qio,FlashSize=2M,LwIPVariant=v2mss536,Debug=Disabled,DebugLevel=None____,UploadSpeed=115200",
+    "configuration": "CpuFrequency=80,CrystalFreq=26,FlashFreq=40,FlashMode=qio,UploadSpeed=115200,FlashSize=2M,ResetMethod=ck,Debug=Disabled,DebugLevel=None____",
     "port": "COM3",
     "sketch": "ElectronicsWebController.ino",
     "output": "../_build"
