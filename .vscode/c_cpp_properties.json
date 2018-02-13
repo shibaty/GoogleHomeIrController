@@ -5,6 +5,10 @@
             "includePath": [
                 "/usr/include",
                 "/usr/local/include",
+                "/Users/shibaty/Library/Arduino15/packages/esp8266/hardware/esp8266/2.4.0-rc2/cores/esp8266",
+                "/Users/shibaty/Library/Arduino15/packages/esp8266/hardware/esp8266/2.4.0-rc2/libraries",
+                "/Users/shibaty/Programming/arduino/libraries/ArduinoJson",
+                "/Users/shibaty/Programming/arduino/libraries/IRremoteESP8266/src",
                 "${workspaceRoot}"
             ],
             "defines": [],
@@ -13,6 +17,10 @@
                 "path": [
                     "/usr/include",
                     "/usr/local/include",
+                    "/Users/shibaty/Library/Arduino15/packages/esp8266/hardware/esp8266/2.4.0-rc2/cores/esp8266",
+                    "/Users/shibaty/Library/Arduino15/packages/esp8266/hardware/esp8266/2.4.0-rc2/libraries",
+                    "/Users/shibaty/Programming/arduino/libraries/ArduinoJson",
+                    "/Users/shibaty/Programming/arduino/libraries/IRremoteESP8266/src",
                     "${workspaceRoot}"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
